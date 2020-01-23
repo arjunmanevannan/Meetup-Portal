@@ -79,3 +79,51 @@ main{
 	font-weight:700;
 	text-decoration:none;
 }
+
+.footer-link{
+	color:white;
+	text-decoration:none;
+	font-size:15px;
+	font-weight:700;
+}
+
+.footer-text{
+	color:white;
+	text-decoration:none;
+	font-size:15px;
+	font-weight:700;
+}
+
+.footer-nav-links{
+	display:flex;
+	justify-content:space-around;
+	list-style:none;
+	margin:10px;	
+}
+
+Social{
+	align-items:right;
+}
+
+.test{
+	background-color:blue;
+}
+
+.test1{
+	background-color:red;
+}
+
+
+
+.test2{
+	background-color:yellow;
+	width: 50%;
+}
+
+#inner1{
+	float:left;
+}
+#inner2{
+	float:left;
+	clear:left;
+}
