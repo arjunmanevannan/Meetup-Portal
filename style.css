@@ -2,13 +2,17 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
-
+a:hover {
+  background-color: blue;
+}
 header{
-	background-color: rgb(4, 106, 56);
+	//background-color: rgb(4, 106, 56);
 	height:10vh;
 }
 .ramasamy{
+	background-color: rgb(4, 106, 56);
 	display:flex;
 	align-items: center;
 }
@@ -19,8 +23,7 @@ footer{
 	width: 100%;
 	margin: auto;
 	align-items: center;
-	background-image: linear-gradient(-90deg, green, white);
-	//background-color: rgb(4, 106, 56);
+	background-color: rgb(4, 106, 56);
 	bottom:0;
 	position:absolute;
 }
@@ -44,20 +47,35 @@ main{
 	flex:1;
 }
 
-.general-site-nav{
-	
+
+.gen-site-nav{
+	//padding-top:15px;
+	background-color: #b3a369;
 }
 
+.gen-nav-links{
+	//display:flex;
+	//justify-content: space-around;
+	list-style:none;
+	//padding-top:5px;
+}
+.gen-link{
+	color:black;
+	font-size: 15px;
+	font-weight:700;
+	text-decoration:none;
+}
 
-.nav-links{
+.user-nav-links{
 	display:flex;
 	justify-content: space-around;
 	list-style:none;
 	padding-top:12px;
 }
 
-.link{
-	font-size: 18px;
+.user-link{
+	color: white;
+	font-size: 15px;
 	font-weight:700;
 	text-decoration:none;
 }
