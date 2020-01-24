@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 	<head>  
 		<meta charset = "utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
 		<link rel = "stylesheet" href="./style.css" />
-		<title> Homepage </title>
+		<title> SavedConnections </title>
 	</head>
-	
-	<body> 
-	
+	<body>
 	<header>
 	<div class = "ramasamy">
 		<div class = "logo-container">
 			<img src="icon.png" alt="logo" width = "50" height="50">
 			<h2 class = "logo"> <a href = "index.html"> TechMasters </a> </h2>
 		</div>
-	
 		<nav class ="user-specific-nav">
 			<ul class = "user-nav-links">
-				<li> <a class = "user-link" href="#">Host New Talk</a> </li>
-				<li> <a class = "user-link" href="savedConnection.html">Log In</a> </li>
-				<li> <a class = "user-link" href="savedConnection.html">Sign Up!</a> </li>
+				<li> <a class = "user-link" href="#">Host A Talk</a> </li>
+				<li> <a class = "user-link" href="#">Log Out</a> </li>
+				<li> <a class = "user-link" href="#">My Talks</a> </li>
 			</ul>
 		</nav>	
 		</div>
 	
-		<nav class = "gen-site-nav" >
+		<nav class = "gen-site-nav-logged-in" >
 			<ul class = "gen-nav-links">
-				<li> <a class = "gen-link" href="connections.html">Scheduled Talks &nbsp;</a> </li>
+				<li> <a class = "gen-link" href="#">My Talks &nbsp;</a> </li>
 				<li> <a class = "gen-link" href="#">Learn More &nbsp; </a> </li>
 				<li> <a class = "gen-link" href="#">Pricing </a> </li>
 			</ul>
+			<div class = "userName">
+				Welcome back, Norm!
+			</div>
+			
 		</nav>
 	</header>
 	
-	<main>
-		Welcome to TechMasters! <BR><BR>
-		This site allows you to host your own talks in our college premises! Whether you're looking to spread some knowledge or build your confidence, this is the place for you! 
-		Consider this platform as ToastMasters, but for technology enthusiasts! 
-		<BR><BR>
-		Check out the Scheduled Talks section to join a talk, or host your own! 
+	<main class = "test">
+		<div class = "caption">
+			<h3> Norm's Connections: </h3>
+		</div>
+		<BR>
+		<table style="width:100%">
+		<tr>
+			<th>Title</th>
+			<th>Category</th>
+			<th>Going</th>
+			<th> </th>
+		</tr>
+		<tr>
+			<td>Working with NetBeans</td>
+			<td>JAVA SE</td>
+			<td>Yes</td>
+			<td> <button onclick = "location.href='connection.html'" type="button">Update</button> <button onclick = "location.href='savedConnections.html'" type="button">Delete</button> </td>
+		</tr>
+		<tr>
+			<td>Build Good Resume</td>
+			<td>Career</td>
+			<td>Maybe</td>
+			<td> <button onclick = "location.href='connection.html'" type="button">Update</button> <button onclick = "location.href='savedConnections.html'" type="button">Delete</button> </td>
+		
+		</tr>
+		</table>	
 	</main>
 	
 	<img class = "big-circle" src = "big-eclipse.svg" alt="">
 	<img class = "med-circle" src = "mid-eclipse.svg" alt="">
 	<img class = "small-circle" src = "small-eclipse.svg" alt="">
 	
-	<footer>
+	
+<footer>
 		<small class = "footer-text"> &copy; TechMasters </small>
 		<ul class = "footer-nav-links">
 			<li> <a class = "footer-link" href="#">About</a> </li>
@@ -58,5 +81,5 @@
 			<img src="twitter-brands.svg" alt="twitter" height="25" width="25" />
 		</div>
 	</footer>
-	</body>
+</body>
 </html>

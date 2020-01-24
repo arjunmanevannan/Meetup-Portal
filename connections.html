@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 	<head>  
 		<meta charset = "utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
 		<link rel = "stylesheet" href="./style.css" />
-		<title> Homepage </title>
+		<title> Connections </title>
 	</head>
-	
-	<body> 
-	
+	<body>
 	<header>
 	<div class = "ramasamy">
 		<div class = "logo-container">
@@ -20,8 +19,8 @@
 		<nav class ="user-specific-nav">
 			<ul class = "user-nav-links">
 				<li> <a class = "user-link" href="#">Host New Talk</a> </li>
-				<li> <a class = "user-link" href="savedConnection.html">Log In</a> </li>
-				<li> <a class = "user-link" href="savedConnection.html">Sign Up!</a> </li>
+				<li> <a class = "user-link" href="userProfileView.html">Log In</a> </li>
+				<li> <a class = "user-link" href="#">Sign Up!</a> </li>
 			</ul>
 		</nav>	
 		</div>
@@ -35,14 +34,33 @@
 		</nav>
 	</header>
 	
-	<main>
-		Welcome to TechMasters! <BR><BR>
-		This site allows you to host your own talks in our college premises! Whether you're looking to spread some knowledge or build your confidence, this is the place for you! 
-		Consider this platform as ToastMasters, but for technology enthusiasts! 
-		<BR><BR>
-		Check out the Scheduled Talks section to join a talk, or host your own! 
-	</main>
+	<main class = "catalogMain">
 	
+		<h3> Android </h3>
+		<small> A series of talks hosted by ITCS 5180</small>
+		<ul class = "catalog-links">
+				<li> <a class = "catalog-link" href="connection.html">Gestures</a> </li>
+				<li> <a class = "catalog-link" href="connection.html">What's new in Android 10?</a> </li>
+		</ul>
+		<BR>
+		<h3> Introduction to JAVA </h3>
+		<small> A series of talks aimed to help students get started with Java. No prior coding experience needed! </small>
+		<ul class = "catalog-links">
+				<li> <a class = "catalog-link" href="connection.html">Collections</a> </li>
+				<li> <a class = "catalog-link" href="connection.html">What's new in Java 12</a> </li>
+				<li> <a class = "catalog-link" href="connection.html">Advanced</a> </li>
+		</ul>
+		<BR>
+		<h3> Career </h3>
+		<small> A series of talks aimed at building a solid career in Software! Free Pizzas included!! </small> 
+		<ul class = "catalog-links">
+				<li> <a class = "catalog-link" href="connection.html">Resume Building</a> </li>
+				<li> <a class = "catalog-link" href="connection.html">How to tackle the Phone/Skype Interview!</a> </li>
+				<li> <a class = "catalog-link" href="connection.html">Importance of Grooming</a> </li>
+		</ul>
+		<BR>
+		
+	</main>
 	<img class = "big-circle" src = "big-eclipse.svg" alt="">
 	<img class = "med-circle" src = "mid-eclipse.svg" alt="">
 	<img class = "small-circle" src = "small-eclipse.svg" alt="">
@@ -58,5 +76,5 @@
 			<img src="twitter-brands.svg" alt="twitter" height="25" width="25" />
 		</div>
 	</footer>
-	</body>
+</body>
 </html>

@@ -5,8 +5,37 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+.Yes {
+  background-color: #3ddc84;
+  border: 2px solid #3ddc84;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.Maybe {
+  background-color: transparent;
+  border: 2px solid #4285f4;
+  color: black;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+}
+.No {
+  background-color: transparent;
+  border: 2px solid red;
+  color: black;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+}
+
 button {
-  background-color: #b3a369;
+  background-color: #4285f4;
   border: none;
   color: white;
   padding: 5px 15px;
@@ -16,13 +45,15 @@ button {
 }
 
 a:hover {
-  background-color: gray;
+  background-color:#ccccff;
 }
+
 header{
 	height:10vh;
 }
+
 .ramasamy{
-	background-color: rgb(4, 106, 56);
+	background-color:white;
 	display:flex;
 	align-items: center;
 }
@@ -33,9 +64,10 @@ footer{
 	width: 100%;
 	margin: auto;
 	align-items: center;
-	background-color: rgb(4, 106, 56);
+	background-color: #3ddc84;
 	bottom:0;
 	position:fixed;
+	clear:both;
 }
 
 main{
@@ -49,17 +81,13 @@ main{
 }
 .catalogMain{
 	width: 80%;
-	height:600px;
-	//background-color:blue;
-	
-		
+	height:600px;		
 }
 
 .itemMain{
 	display:flex;
 	width: 80%;
 	height:600px;
-	//background-color:blue;		
 }
 
 .logo-container{
@@ -69,7 +97,11 @@ main{
 	align-items: center;
 	
 }
-
+.logo,.caption {
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color: transparent;
+}
 
 .user-specific-nav{
 	flex:3;
@@ -78,19 +110,19 @@ main{
 
 .gen-site-nav{
 	//padding-top:15px;
-	background-color: #b3a369;
+	background-color: #4285f4;
+	align-items: center;
 }
 
 .gen-nav-links{
-	//display:flex;
-	//justify-content: space-around;
+	display:flex;
+	justify-content: left;
 	list-style:none;
-	flex:3;
-	//padding-top:5px;
+	align-items: center;
 }
 .gen-link{
 	color:black;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight:700;
 	text-decoration:none;
 }
@@ -103,14 +135,17 @@ main{
 }
 
 .user-link{
-	color: white;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color: transparent;
+	//color: white;
 	font-size: 15px;
 	font-weight:700;
 	text-decoration:none;
 }
 
 .footer-link{
-	color:white;
+	color:black;
 	text-decoration:none;
 	font-size:15px;
 	font-weight:700;
@@ -119,7 +154,7 @@ main{
 
 .footer-text{
 	flex:1;
-	color:white;
+	color:black;
 	text-decoration:none;
 }
 
@@ -138,12 +173,15 @@ main{
 
 
 .gen-site-nav-logged-in{
-	background-color: #b3a369;
+	background-color: #4285f4;
 	display:flex;
 }
 .userName{
 	flex:1;
 	text-align:right;
+	padding: 0px 30px 0px 0px;
+	font-size:20px;
+	font-weight:500;
 }
 
 .itemDesc{
@@ -156,15 +194,6 @@ main{
 	//background-color:yellow;
 	float:right;
 }
-/*
-#inner1{
-	float:left;
-}
-#inner2{
-	float:left;
-	clear:left;
-}*/
-
 
 .catalog-links{
 	list-style: none;
@@ -181,7 +210,6 @@ main{
 	//background-color:blue;		
 }
 
-
 table{
 	width: 100%;
 }
@@ -196,4 +224,32 @@ th{
 td{
 	padding:15px;
 	border-bottom: 1px solid #ddd;
+}
+.big-circle{
+	position:absolute;
+	top: 0px;
+	right: 0px;
+	z-index:-1;
+	opacity: 0.5;
+	height: 80%;
+}
+.med-circle{
+	position:absolute;
+	top: 30%;
+	right: 30%;
+	z-index:-1;
+	height: 60%;
+}
+.small-circle{
+	position:absolute;
+	bottom: 0%;
+	left: 550px;
+	z-index:-1;
+}
+#pollText{
+	font-size:20px;
+}
+
+#pollButtons{
+	padding: 0 0 0 45px; 
 }
