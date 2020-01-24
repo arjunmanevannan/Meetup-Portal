@@ -4,6 +4,17 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
+
+button {
+  background-color: #b3a369;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+}
+
 a:hover {
   background-color: blue;
 }
@@ -19,13 +30,13 @@ header{
 
 footer{
 	display:flex;
-	height: 10vh;
+	height: 8vh;
 	width: 100%;
 	margin: auto;
 	align-items: center;
 	background-color: rgb(4, 106, 56);
 	bottom:0;
-	position:absolute;
+	position:fixed;
 }
 
 main{
@@ -36,6 +47,20 @@ main{
 	top: 50%;
 	transform: translate(-50%, -50%);
 	font-size:22px;
+}
+.catalogMain{
+	width: 80%;
+	height:600px;
+	//background-color:blue;
+	
+		
+}
+
+.itemMain{
+	display:flex;
+	width: 80%;
+	height:600px;
+	//background-color:blue;		
 }
 
 .logo-container{
@@ -88,36 +113,34 @@ main{
 }
 
 .footer-text{
+	flex:1;
 	color:white;
 	text-decoration:none;
-	font-size:15px;
-	font-weight:700;
 }
 
 .footer-nav-links{
 	display:flex;
 	justify-content:space-around;
 	list-style:none;
-	margin:10px;	
+	flex:1;	
 }
 
-Social{
-	align-items:right;
+.Social{
+	flex:4;
+	text-align:right;
+	padding-right:15px;
 }
 
 .test{
+	flex:2;
 	background-color:blue;
+	float: left;
 }
-
-.test1{
-	background-color:red;
-}
-
-
 
 .test2{
+	flex:1;
 	background-color:yellow;
-	width: 50%;
+	float:right;
 }
 
 #inner1{
