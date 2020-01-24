@@ -52,7 +52,7 @@ header{
 	height:10vh;
 }
 
-.ramasamy{
+.upperHeader{
 	background-color:white;
 	display:flex;
 	align-items: center;
@@ -109,7 +109,6 @@ main{
 
 
 .gen-site-nav{
-	//padding-top:15px;
 	background-color: #4285f4;
 	align-items: center;
 }
@@ -138,7 +137,6 @@ main{
 	background: linear-gradient(to right, #494964, #6f6f89);
 	-webkit-background-clip:text;
 	-webkit-text-fill-color: transparent;
-	//color: white;
 	font-size: 15px;
 	font-weight:700;
 	text-decoration:none;
@@ -191,7 +189,6 @@ main{
 
 .itemPoll{
 	flex:1;
-	//background-color:yellow;
 	float:right;
 }
 
